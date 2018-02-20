@@ -1,0 +1,1522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OSIŃSKI TRC Viewer</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>Start</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_5" stretch="20,2">
+            <item>
+             <widget class="QGroupBox" name="groupBox">
+              <property name="title">
+               <string>USTAWIENIA</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <item>
+                <layout class="QGridLayout" name="gridLayout_3" columnstretch="10,10">
+                 <item row="0" column="0">
+                  <layout class="QGridLayout" name="gridLayout_4">
+                   <item row="0" column="0">
+                    <widget class="QGroupBox" name="groupBox_3">
+                     <property name="title">
+                      <string>Czas timera (w milisekundach)</string>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0">
+                      <item>
+                       <widget class="QSpinBox" name="spinBox">
+                        <property name="enabled">
+                         <bool>false</bool>
+                        </property>
+                        <property name="buttonSymbols">
+                         <enum>QAbstractSpinBox::PlusMinus</enum>
+                        </property>
+                        <property name="suffix">
+                         <string> ms</string>
+                        </property>
+                        <property name="minimum">
+                         <number>100</number>
+                        </property>
+                        <property name="maximum">
+                         <number>60000</number>
+                        </property>
+                        <property name="singleStep">
+                         <number>100</number>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="checkBoxTimerON">
+                        <property name="enabled">
+                         <bool>false</bool>
+                        </property>
+                        <property name="layoutDirection">
+                         <enum>Qt::RightToLeft</enum>
+                        </property>
+                        <property name="text">
+                         <string>Włącz timer</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QGroupBox" name="groupBox_5">
+                     <property name="title">
+                      <string>Iterator</string>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_8">
+                      <item>
+                       <widget class="QSpinBox" name="spinBox_2">
+                        <property name="enabled">
+                         <bool>false</bool>
+                        </property>
+                        <property name="buttonSymbols">
+                         <enum>QAbstractSpinBox::PlusMinus</enum>
+                        </property>
+                        <property name="maximum">
+                         <number>1000000</number>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QGroupBox" name="groupBox_4">
+                     <property name="title">
+                      <string>Odczytano ramek:</string>
+                     </property>
+                     <layout class="QGridLayout" name="gridLayout_5">
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="label_3">
+                        <property name="text">
+                         <string>185h:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="0">
+                       <widget class="QLabel" name="label_6">
+                        <property name="text">
+                         <string>485h:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="0">
+                       <widget class="QLabel" name="label_7">
+                        <property name="text">
+                         <string>205h:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="0">
+                       <widget class="QLabel" name="label_5">
+                        <property name="text">
+                         <string>385h:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QLabel" name="label_4">
+                        <property name="text">
+                         <string>285h:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="1">
+                       <widget class="QLineEdit" name="lineEdit">
+                        <property name="enabled">
+                         <bool>true</bool>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="1">
+                       <widget class="QLineEdit" name="lineEdit_2">
+                        <property name="alignment">
+                         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="1">
+                       <widget class="QLineEdit" name="lineEdit_3">
+                        <property name="alignment">
+                         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="1">
+                       <widget class="QLineEdit" name="lineEdit_4">
+                        <property name="alignment">
+                         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="1">
+                       <widget class="QLineEdit" name="lineEdit_5">
+                        <property name="alignment">
+                         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="0" column="1">
+                  <layout class="QVBoxLayout" name="verticalLayout_9" stretch="3,10">
+                   <item>
+                    <widget class="QGroupBox" name="groupBox_2">
+                     <property name="title">
+                      <string>Pasek postępu</string>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_10">
+                      <item>
+                       <widget class="QRadioButton" name="radioButton_2">
+                        <property name="text">
+                         <string>Pokazuje czas timera</string>
+                        </property>
+                        <property name="checked">
+                         <bool>true</bool>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QRadioButton" name="radioButton">
+                        <property name="text">
+                         <string>Pokazuje aktualny nr iteratora na tle całości</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QGroupBox" name="groupBox_6">
+                     <property name="title">
+                      <string>Wykresy - rozmiary osi x</string>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_4">
+                      <item>
+                       <layout class="QGridLayout" name="gridLayout_6">
+                        <item row="4" column="0">
+                         <widget class="QLabel" name="label_12">
+                          <property name="text">
+                           <string>Wykres 5:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QSpinBox" name="spinBox_3">
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                          <property name="buttonSymbols">
+                           <enum>QAbstractSpinBox::PlusMinus</enum>
+                          </property>
+                          <property name="minimum">
+                           <number>10</number>
+                          </property>
+                          <property name="maximum">
+                           <number>20</number>
+                          </property>
+                          <property name="value">
+                           <number>15</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_8">
+                          <property name="text">
+                           <string>Wykres 1:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QLabel" name="label_9">
+                          <property name="text">
+                           <string>Wykres 2:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="1">
+                         <widget class="QSpinBox" name="spinBox_6">
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                          <property name="buttonSymbols">
+                           <enum>QAbstractSpinBox::PlusMinus</enum>
+                          </property>
+                          <property name="minimum">
+                           <number>10</number>
+                          </property>
+                          <property name="maximum">
+                           <number>20</number>
+                          </property>
+                          <property name="value">
+                           <number>15</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="1">
+                         <widget class="QSpinBox" name="spinBox_7">
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                          <property name="buttonSymbols">
+                           <enum>QAbstractSpinBox::PlusMinus</enum>
+                          </property>
+                          <property name="prefix">
+                           <string/>
+                          </property>
+                          <property name="minimum">
+                           <number>10</number>
+                          </property>
+                          <property name="maximum">
+                           <number>20</number>
+                          </property>
+                          <property name="value">
+                           <number>15</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="QLabel" name="label_10">
+                          <property name="text">
+                           <string>Wykres 3:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="QSpinBox" name="spinBox_4">
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                          <property name="buttonSymbols">
+                           <enum>QAbstractSpinBox::PlusMinus</enum>
+                          </property>
+                          <property name="minimum">
+                           <number>10</number>
+                          </property>
+                          <property name="maximum">
+                           <number>20</number>
+                          </property>
+                          <property name="value">
+                           <number>15</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="0">
+                         <widget class="QLabel" name="label_11">
+                          <property name="text">
+                           <string>Wykres 4:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="1">
+                         <widget class="QSpinBox" name="spinBox_5">
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                          <property name="buttonSymbols">
+                           <enum>QAbstractSpinBox::PlusMinus</enum>
+                          </property>
+                          <property name="minimum">
+                           <number>10</number>
+                          </property>
+                          <property name="maximum">
+                           <number>20</number>
+                          </property>
+                          <property name="value">
+                           <number>15</number>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout" stretch="10,15">
+              <item>
+               <widget class="QPushButton" name="pushButton_4">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>400</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Otwórz Plik</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTextEdit" name="textEdit_3">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Tabela</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="tableWidget">
+            <property name="showGrid">
+             <bool>true</bool>
+            </property>
+            <property name="gridStyle">
+             <enum>Qt::CustomDashLine</enum>
+            </property>
+            <property name="cornerButtonEnabled">
+             <bool>true</bool>
+            </property>
+            <property name="rowCount">
+             <number>23</number>
+            </property>
+            <property name="columnCount">
+             <number>15</number>
+            </property>
+            <attribute name="horizontalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <column>
+             <property name="text">
+              <string>185h: Nazwa</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignHCenter|AlignTop</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="textAlignment">
+              <set>AlignHCenter|AlignTop</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>185h: Wartość</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>285h: Nazwa</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>285h: Wartość</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>485h: Nazwa</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>485h: Wartość</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>485h: Nazwa</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>485h: Wartość</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>205h: Nazwa</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>205h: Wartość</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <item row="0" column="0">
+             <property name="text">
+              <string>FZED1</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="0" column="1">
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item row="0" column="3">
+             <property name="text">
+              <string>MASA_A</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="0" column="6">
+             <property name="text">
+              <string>AWCAN_KA</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="0" column="9">
+             <property name="text">
+              <string>0J_TK</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="0" column="12">
+             <property name="text">
+              <string>FRED1</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="1" column="0">
+             <property name="text">
+              <string>FZED2</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="1" column="3">
+             <property name="text">
+              <string>MASA_B</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="1" column="6">
+             <property name="text">
+              <string>AWCAN_KB</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="1" column="9">
+             <property name="text">
+              <string>Gm</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="1" column="12">
+             <property name="text">
+              <string>FRED2</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="2" column="0">
+             <property name="text">
+              <string>A_MH</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="2" column="3">
+             <property name="text">
+              <string>MASA_S</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="2" column="6">
+             <property name="text">
+              <string>ERRSTKA</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="2" column="9">
+             <property name="text">
+              <string>Cd</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="2" column="12">
+             <property name="text">
+              <string>V_POJAZDU</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="3" column="0">
+             <property name="text">
+              <string>ZAŁ_HAMULCA</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="3" column="3">
+             <property name="text">
+              <string>AWMC_B</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="3" column="6">
+             <property name="text">
+              <string>ERRSTKB</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="3" column="9">
+             <property name="text">
+              <string>0SHP</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="3" column="12">
+             <property name="text">
+              <string>ED1_ZAŁ</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="4" column="0">
+             <property name="text">
+              <string>WH_A</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="4" column="3">
+             <property name="text">
+              <string>AWMCp_B</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="4" column="6">
+             <property name="text">
+              <string>ERRSTNS</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="4" column="9">
+             <property name="text">
+              <string>0RS</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="4" column="12">
+             <property name="text">
+              <string>ED2_ZAŁ</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="5" column="0">
+             <property name="text">
+              <string>WH_B</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="5" column="3">
+             <property name="text">
+              <string>AWMZR_B</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="5" column="6">
+             <property name="text">
+              <string>RA_KA</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="5" column="9">
+             <property name="text">
+              <string>SG</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="5" column="12">
+             <property name="text">
+              <string>MED_SNP</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="6" column="0">
+             <property name="text">
+              <string>WH_S</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="6" column="3">
+             <property name="text">
+              <string>AWMW_B</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="6" column="5">
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item row="6" column="6">
+             <property name="text">
+              <string>RB_KA</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="6" column="9">
+             <property name="text">
+              <string>0J_1</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="6" column="12">
+             <property name="text">
+              <string>POSL_N</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="7" column="0">
+             <property name="text">
+              <string>0J</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="7" column="3">
+             <property name="text">
+              <string>AWMC_A</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="7" column="6">
+             <property name="text">
+              <string>RA_KB</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="7" column="9">
+             <property name="text">
+              <string>0J_2</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="7" column="12">
+             <property name="text">
+              <string>StHEP_SL</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="8" column="0">
+             <property name="text">
+              <string>MCA</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="8" column="3">
+             <property name="text">
+              <string>AWMCp_A</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="8" column="6">
+             <property name="text">
+              <string>RB_KB</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="8" column="9">
+             <property name="text">
+              <string>0J_3</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="9" column="0">
+             <property name="text">
+              <string>MCB</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="9" column="3">
+             <property name="text">
+              <string>AWMZR_A</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="9" column="6">
+             <property name="text">
+              <string>RAB_A</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="9" column="9">
+             <property name="text">
+              <string>0J_4</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="9" column="12">
+             <property name="text">
+              <string>AWYp_A1</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="10" column="0">
+             <property name="text">
+              <string>MCS</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="10" column="3">
+             <property name="text">
+              <string>AWMW_A</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="10" column="6">
+             <property name="text">
+              <string>RAB_B</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="10" column="9">
+             <property name="text">
+              <string>0J_5</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="10" column="12">
+             <property name="text">
+              <string>AWYp_A2</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="11" column="3">
+             <property name="text">
+              <string>AWCANRS_S</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="11" column="6">
+             <property name="text">
+              <string>brWYBORU_TK</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="11" column="9">
+             <property name="text">
+              <string>0J_6</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="11" column="12">
+             <property name="text">
+              <string>AWYp_B1</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="12" column="0">
+             <property name="text">
+              <string>MZ</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="12" column="3">
+             <property name="text">
+              <string>AWCANRS_B</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="12" column="6">
+             <property name="text">
+              <string>brWYBORU_TT</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="12" column="9">
+             <property name="text">
+              <string>0J_7</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="12" column="12">
+             <property name="text">
+              <string>AWYp_B2</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="13" column="0">
+             <property name="text">
+              <string>MG</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="13" column="3">
+             <property name="text">
+              <string>AWCANRS_A</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="13" column="6">
+             <property name="text">
+              <string>MED</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="13" column="9">
+             <property name="text">
+              <string>AWMZ_KA</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="13" column="12">
+             <property name="text">
+              <string>AWYp_S1</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="14" column="0">
+             <property name="text">
+              <string>StHEP</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="14" column="3">
+             <property name="text">
+              <string>OGR V</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="14" column="6">
+             <property name="text">
+              <string>EP</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="14" column="9">
+             <property name="text">
+              <string>AWMGp_KA</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="14" column="12">
+             <property name="text">
+              <string>AWYp_S2</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="15" column="3">
+             <property name="text">
+              <string>AWMC_S</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="15" column="6">
+             <property name="text">
+              <string>PN</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="15" column="9">
+             <property name="text">
+              <string>AWMG_KA</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="16" column="3">
+             <property name="text">
+              <string>AWMCp_S</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="16" column="6">
+             <property name="text">
+              <string>PS</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="16" column="9">
+             <property name="text">
+              <string>AWMHS_KA</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="17" column="3">
+             <property name="text">
+              <string>AWMZR_S</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="17" column="6">
+             <property name="text">
+              <string>TW</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="17" column="9">
+             <property name="text">
+              <string>AWMC_KA</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="18" column="3">
+             <property name="text">
+              <string>AWMW_S</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="18" column="6">
+             <property name="text">
+              <string>AK2</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="18" column="9">
+             <property name="text">
+              <string>AWMZ_KB</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="19" column="3">
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item row="19" column="9">
+             <property name="text">
+              <string>AWMGp_KB</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="20" column="9">
+             <property name="text">
+              <string>AWMG_KB</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="21" column="9">
+             <property name="text">
+              <string>AWMHS_KB</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="22" column="9">
+             <property name="text">
+              <string>AWMC_KB</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Wykresy</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QCustomPlot" name="widget_5" native="true"/>
+          </item>
+          <item>
+           <widget class="QCustomPlot" name="widget_4" native="true"/>
+          </item>
+          <item>
+           <widget class="QCustomPlot" name="widget_3" native="true"/>
+          </item>
+          <item>
+           <widget class="QCustomPlot" name="widget_2" native="true"/>
+          </item>
+          <item>
+           <widget class="QCustomPlot" name="widget" native="true"/>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_2" rowstretch="5,0" columnstretch="5,10,15,15">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <item row="0" column="1">
+         <widget class="QTextEdit" name="textEdit">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="pushButton">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Poprzedni</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Czas ramki:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Nr aktualnej ramki:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Następny</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QProgressBar" name="progressBar">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="value">
+           <number>0</number>
+          </property>
+          <property name="textVisible">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QTextEdit" name="textEdit_2">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>185h, 285h, 385h, 485h, 205h</string>
+          </property>
+          <property name="whatsThis">
+           <string extracomment="185h, 285h, 385h, 485h, 205h"/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Początek</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionOtworz">
+   <property name="text">
+    <string>Otwórz plik</string>
+   </property>
+  </action>
+  <action name="actionUstawienia">
+   <property name="text">
+    <string>Ustawienia</string>
+   </property>
+  </action>
+  <action name="actionZamknij">
+   <property name="text">
+    <string>Zamknij</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
